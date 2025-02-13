@@ -1,0 +1,40 @@
+/* Resetting all margins, paddings, borders */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a uniform line-height and font inheritance */
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove border from images and make them responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: block;
+}
+
+/* Remove table border-spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

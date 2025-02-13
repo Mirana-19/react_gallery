@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #4e75ff;
+  --color-secondary: #6c8cff;
+  --color-gray: #808080;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+}
