@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getImages } from './api/getImages';
 import { Searchbar } from './components/Searchbar/Searchbar';
 import { Gallery } from './components/Gallery/Gallery';
@@ -13,6 +13,10 @@ function App() {
   };
 
   const handleLoadMore = () => setPage(prevState => prevState + 1);
+
+  useEffect(() => {
+    handleGetImages('cat');
+  }, []);
 
   return (
     <>
